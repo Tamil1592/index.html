@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redirecting…</title>
+
+  <!-- FAST fallback redirect for browsers -->
+  <meta http-equiv="refresh" content="0; url=https://www.amazon.in">
+
+  <!-- JavaScript redirect (immediate if JS is enabled) -->
+  <script>
+    // Use replace() to avoid adding a new history entry
+    window.location.replace("https://www.amazon.in");
+  </script>
+
+  <!-- Provide a clickable link in case redirects are blocked -->
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #0b0b0b;
+      color: #fff;
+    }
+    a {
+      color: #6ee7b7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .box {
+      text-align: center;
+      padding: 1.5rem;
+      max-width: 560px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Redirecting to Amazon…</h1>
+    <p>If you are not redirected automatically, 
+      <a href="https://www.amazon.in">click here to go to Amazon</a>.
+    </p>
+  </div>
+</body>
+</html>
